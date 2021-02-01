@@ -2,20 +2,20 @@
 # @Author: D1SH
 # @Date:   2021-02-01 11:17:07
 # @Last Modified by:   D1SH
-# @Last Modified time: 2021-02-01 17:49:13
+# @Last Modified time: 2021-02-01 18:00:51
 require 'gossip'
 
 
 class ApplicationController < Sinatra::Base
   get '/' do  
-	  erb :index, locals: {gossips: Gossip.all} #Local method. Declare array in Gossip.all
+	  erb :index, locals: {gossips: Gossip.all} #HOME PAGE #Local method. Declare array in Gossip.all
   end
   
-  get '/gossips/new/' do
+  get '/gossips/new/' do #CREATE FORMULAR FOR NEW GOSSIP
     erb :new_gossip
   end
   
-  post '/gossips/new/' do 
+  post '/gossips/new/' do #SAVE NEW GOSSIP IN ARRAY + REDIRECT HOME PAGE
     Gossip.new(params["gossip_author"], params["gossip_content"]).save
     redirect'/'
   end
@@ -28,7 +28,7 @@ class ApplicationController < Sinatra::Base
   #   puts "Gossip end".yellow.bold
   #  end
 
-   get '/gossips/:id/' do 
+   get '/gossips/:id/' do #SHOW ALL GOSSIP FROM DB.csv
     erb :show, locals: {show: Gossip.all[params[:id].to_i], id: params[:id].to_i}
  end
  
