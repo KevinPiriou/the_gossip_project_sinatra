@@ -1,5 +1,5 @@
 [#] = > :THE GOSSIP PROJECT SINATRA
-[#] Ps : Folder app/assets should be delete, test useless CSS
+>[#] Ps : Folder app/assets should be delete, test useless CSS
 
 > Instruction :
 
@@ -7,7 +7,7 @@
 - [2] $ CD FOLDER_NAME
 - [3] $ BUNDLE INSTALL
 
-> RoadMap [✔][ ]:
+> RoadMap [✔] :
 
 - [✔] index.erb
 - [✔] gossip.rb
@@ -21,7 +21,7 @@
 - [ ] def comment
 
 
-> Improvement [✔][ ] :
+> Improvement [✔] :
 
 - [ ] Terminal log
 - [ ] HTML css
