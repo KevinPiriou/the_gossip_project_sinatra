@@ -2,7 +2,7 @@
 # @Author: D1SH
 # @Date:   2021-02-01 12:03:00
 # @Last Modified by:   D1SH
-# @Last Modified time: 2021-02-01 18:01:25
+# @Last Modified time: 2021-02-01 18:04:11
 class Gossip
   attr_accessor :author, :content
 

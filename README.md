@@ -6,6 +6,7 @@
 - [1] $ GIT CLONE REPOSITORY
 - [2] $ CD FOLDER_NAME
 - [3] $ BUNDLE INSTALL
+- [4] $ SHOTGUN CONFIG.RU -P 4567
 ```
 
 ## RoadMap [✔] :
