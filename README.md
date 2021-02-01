@@ -1,4 +1,4 @@
-[#] = > :THE GOSSIP PROJECT SINATRA
+[TITLE] = > :THE GOSSIP PROJECT SINATRA
 >[#] Ps : Folder app/assets should be delete, test useless CSS
 
 > Instruction :
