@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1><em>WELCOME TO GOSSIP PROJECT</em></h1>
+    <p>You can write a Gossip just <a href="/gossips/new/">HERE</a></p>
+  </body>
+</html>
+
+<!--Loop show Gossip array, by author & content-->
+<nav>
+<%i = 0 %> 
+<% while i < gossips.size %>
+	<p>
+	   <li>
+     <a href = "gossips/<%=i%>/"> GOSSIP n° <%= i %></a>
+	   <br >
+     <br/> 
+	  <%= gossips[i].author %>
+	  <br >
+    <br/>
+	  <%= gossips[i].content %>
+    </li>
+	</p>
+	<% i = i + 1 %>
+    <% end %>
+    </nav> 
+  </body>
+</html>
